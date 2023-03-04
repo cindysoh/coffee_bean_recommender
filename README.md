@@ -7,11 +7,8 @@ Using dataset from [Kaggle](https://www.kaggle.com/datasets/hanifalirsyad/coffee
 
 This dataset is use to help set the base feature for this recommender. Thereafter, any new locally scrap data can be build upon this. The systems uses conten-based filtering using similarity score for tasing notes, nearest neighbour for taste ranking score and matching string value to country origin.
 
-## EDA
-![alt text](./chart/roaster_country.png)
-
 
 ## How it works
-The recommender system uses content-based filtering to recommend coffee beans to users. Content-based filtering is a technique that recommends items similar to the ones that a user has liked in the past.
+The recommender system uses content-based filtering to recommend coffee beans to users. Content-based filtering is a technique that recommends items similar to the ones that a user input. User can input coffee bean origin(optional), taste rating score and tasting notes (words).
 
-The system first asks the user a few questions about their taste preferences for coffee beans. It then recommends coffee beans based on their taste profile and other characteristics such as roast level, origin, and processing method.
+The system first filter out coffee bean origin from user input (if input is none, then there will be no filtering on origin column). Secondly, it will take in taste rating score input and run through nearest neighbour with n_neighbour = 50.
