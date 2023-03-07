@@ -5,7 +5,7 @@ This project is to provide an solution to coffee enthusiasts that buy specialty 
 
 Using dataset from [Kaggle](https://www.kaggle.com/datasets/hanifalirsyad/coffee-scrap-coffeereview)
 
-This dataset is use to help set the base feature for this recommender. Thereafter, any new locally scrap data can be build upon this. The systems uses conten-based filtering using similarity score for tasing notes, nearest neighbour for taste ranking score and matching string value to country origin.
+This dataset is use to help set the base feature for this recommender. Thereafter, any new locally scrap data can be build upon this. The systems uses content-based filtering using similarity score for tasing notes, nearest neighbour for taste ranking score and matching string value to country origin.
 
 
 ## How it works
