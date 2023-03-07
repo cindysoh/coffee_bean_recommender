@@ -13,7 +13,7 @@ The recommender system uses content-based filtering to recommend coffee beans to
 
 The system first filter out coffee bean origin from user input (if input is none, then there will be no filtering on origin column). 
 Example, Origin: 'Colombia'
-![Origin](coffee_bean_recommender/chart/to/Pour-Over-Coffee-Brewing-300x300.jpeg)
+![Origin]()
 
 
 Secondly, it will take in taste rating score input and run through nearest neighbour with n_neighbour = 50.
