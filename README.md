@@ -12,8 +12,16 @@ This dataset is use to help set the base feature for this recommender. Thereafte
 The recommender system uses content-based filtering to recommend coffee beans to users. Content-based filtering is a technique that recommends items similar to the ones that a user input. User can input coffee bean origin(optional), taste rating score and tasting notes (words).
 
 The system first filter out coffee bean origin from user input (if input is none, then there will be no filtering on origin column). 
-Example, Origin: 'Colombia'
-![Origin](chart/origin.png)
+<br>Example: Origin= 'Colombia'
+<br>![Origin](chart/origin.png)
 
 
 Secondly, it will take in taste rating score input and run through nearest neighbour with n_neighbour = 50.
+<br>Example: Aroma = 6, Acidity = 7, Body = 8, Flavor = 7, After Taste = 9
+<br>![Neighbour](chart/neighbour.png)
+
+Lastly, it will take in user string input of tasting notes and fit through Spacy trained pipeline(en_core_web_lg). Then it sort by the highest similarity score to the coffee description.
+<br>Example: "Juicy, Sweet, Bright"
+<br>![Tasting Notes](chart/spacy.png)
+
+You can try out the app [here](https://beans4u.streamlit.app/)
