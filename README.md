@@ -11,4 +11,9 @@ This dataset is use to help set the base feature for this recommender. Thereafte
 ## How it works
 The recommender system uses content-based filtering to recommend coffee beans to users. Content-based filtering is a technique that recommends items similar to the ones that a user input. User can input coffee bean origin(optional), taste rating score and tasting notes (words).
 
-The system first filter out coffee bean origin from user input (if input is none, then there will be no filtering on origin column). Secondly, it will take in taste rating score input and run through nearest neighbour with n_neighbour = 50.
+The system first filter out coffee bean origin from user input (if input is none, then there will be no filtering on origin column). 
+Example, Origin: 'Colombia'
+![Origin](coffee_bean_recommender/chart/to/Pour-Over-Coffee-Brewing-300x300.jpeg)
+
+
+Secondly, it will take in taste rating score input and run through nearest neighbour with n_neighbour = 50.
